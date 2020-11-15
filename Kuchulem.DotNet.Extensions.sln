@@ -5,22 +5,42 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kuchulem.DotNet.Extensions.Strings", "Kuchulem.DotNet.Extensions.StringExtensions\Kuchulem.DotNet.Extensions.Strings.csproj", "{A2E00B45-788F-4E70-A0DD-F22AA814CF5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kuchulem.DotNet.Extensions.Tests", "Kuchulem.DotNet.Extensions.Tests\Kuchulem.DotNet.Extensions.Tests.csproj", "{08C5BF2F-CF5A-455B-B546-927C76BC6F11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kuchulem.DotNet.Extensions.Tests", "Kuchulem.DotNet.Extensions.Tests\Kuchulem.DotNet.Extensions.Tests.csproj", "{08C5BF2F-CF5A-455B-B546-927C76BC6F11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kuchulem.DotNet.Extensions.IEnumerables", "Kuchulem.DotNet.Extensions.IEnumerables\Kuchulem.DotNet.Extensions.IEnumerables.csproj", "{58971C7B-E454-40EA-AD5A-A7C9D6DD4917}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kuchulem.DotNet.Extensions.Benchmarks", "Kuchulem.DotNet.Extensions.Benchmarks\Kuchulem.DotNet.Extensions.Benchmarks.csproj", "{0590662D-2CCC-4202-B2DC-FE56C9E5A72A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Test|Any CPU = Test|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A2E00B45-788F-4E70-A0DD-F22AA814CF5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A2E00B45-788F-4E70-A0DD-F22AA814CF5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2E00B45-788F-4E70-A0DD-F22AA814CF5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2E00B45-788F-4E70-A0DD-F22AA814CF5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E00B45-788F-4E70-A0DD-F22AA814CF5F}.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E00B45-788F-4E70-A0DD-F22AA814CF5F}.Test|Any CPU.Build.0 = Release|Any CPU
 		{08C5BF2F-CF5A-455B-B546-927C76BC6F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{08C5BF2F-CF5A-455B-B546-927C76BC6F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08C5BF2F-CF5A-455B-B546-927C76BC6F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08C5BF2F-CF5A-455B-B546-927C76BC6F11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C5BF2F-CF5A-455B-B546-927C76BC6F11}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{08C5BF2F-CF5A-455B-B546-927C76BC6F11}.Test|Any CPU.Build.0 = Test|Any CPU
+		{58971C7B-E454-40EA-AD5A-A7C9D6DD4917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58971C7B-E454-40EA-AD5A-A7C9D6DD4917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58971C7B-E454-40EA-AD5A-A7C9D6DD4917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58971C7B-E454-40EA-AD5A-A7C9D6DD4917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58971C7B-E454-40EA-AD5A-A7C9D6DD4917}.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{58971C7B-E454-40EA-AD5A-A7C9D6DD4917}.Test|Any CPU.Build.0 = Release|Any CPU
+		{0590662D-2CCC-4202-B2DC-FE56C9E5A72A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0590662D-2CCC-4202-B2DC-FE56C9E5A72A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0590662D-2CCC-4202-B2DC-FE56C9E5A72A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0590662D-2CCC-4202-B2DC-FE56C9E5A72A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0590662D-2CCC-4202-B2DC-FE56C9E5A72A}.Test|Any CPU.ActiveCfg = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

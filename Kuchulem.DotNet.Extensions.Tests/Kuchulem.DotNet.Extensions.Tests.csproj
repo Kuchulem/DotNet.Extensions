@@ -1,9 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <Configurations>Debug;Release;Test</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Kuchulem.DotNet.Extensions.IEnumerables\Kuchulem.DotNet.Extensions.IEnumerables.csproj" />
     <ProjectReference Include="..\Kuchulem.DotNet.Extensions.StringExtensions\Kuchulem.DotNet.Extensions.Strings.csproj" />
   </ItemGroup>
 
