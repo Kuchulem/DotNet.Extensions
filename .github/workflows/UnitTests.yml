@@ -1,4 +1,4 @@
-name: .NET Core
+name: UnitTests
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
     - name: Install dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build --configuration Test --no-restore
     - name: Test
       run: |
         cd ./Kuchulem.DotNet.Extensions.Tests
