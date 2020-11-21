@@ -3,6 +3,20 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Configurations>Debug;Release;Test</Configurations>
+    <Authors>Kuchulem</Authors>
+    <Description>Extension methods library for dotnet standards.</Description>
+    <Copyright>2020 Kuchulem</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/Kuchulem/DotNet.Extensions</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>enumeration array extension</PackageTags>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <Version>1.0.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Users\amaud\source\repos\Kuchulem\DotNet.Extensions\Kuchulem.DotNet.Extensions.IEnumerables\Kuchulem.DotNet.Extensions.IEnumerables.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>

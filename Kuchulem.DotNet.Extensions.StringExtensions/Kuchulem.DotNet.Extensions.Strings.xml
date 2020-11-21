@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Kuchulem.DotNet.Extensions.Strings</name>
+    </assembly>
+    <members>
+        <member name="T:Kuchulem.DotNet.Extensions.Strings.StringExtensions">
+            <summary>
+            Static class providing extension methods for strings
+            </summary>
+        </member>
+        <member name="F:Kuchulem.DotNet.Extensions.Strings.StringExtensions.DefaultSlugReplacingChar">
+            <summary>
+            Default char separator for slug
+            </summary>
+        </member>
+        <member name="T:Kuchulem.DotNet.Extensions.Strings.StringExtensions.StringToSlugOptions">
+            <summary>
+            Options applyed to the <see cref="!:StringExtensions.ToSlug(string, StringToSlugOptions, string)"/> method.<br/>
+            As this is a flag, multiple options can be applied.
+            </summary>
+        </member>
+        <member name="F:Kuchulem.DotNet.Extensions.Strings.StringExtensions.StringToSlugOptions.None">
+            <summary>
+            No options are applyed, default values will be used :
+            <list type="bullet">
+            <item>
+             Spacing chars not reduced : multiple spacing chars are allowed
+            </item>
+            <item>
+             Lower case applyed to the whole string
+            </item>
+            </list>
+            </summary>
+        </member>
+        <member name="F:Kuchulem.DotNet.Extensions.Strings.StringExtensions.StringToSlugOptions.ReduceSpacingChars">
+            <summary>
+            Reduces the spacing chars, multiple occurences of the separation
+            character will be replaced by a single one.
+            </summary>
+        </member>
+        <member name="F:Kuchulem.DotNet.Extensions.Strings.StringExtensions.StringToSlugOptions.Capitalize">
+            <summary>
+            The resulting slug will be in upper case letters, instead of
+            lower case.
+            </summary>
+        </member>
+        <member name="M:Kuchulem.DotNet.Extensions.Strings.StringExtensions.ToChunks(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Splint a string in chumnks of the same size.
+            </summary>
+            <param name="str"><em>this</em> the string to split in chunks</param>
+            <param name="maxChunkSize">The maximum number of chunks to create</param>
+            <param name="wholeWorlds">True to avoid spliting in worlds</param>
+            <returns></returns>
+        </member>
+        <member name="M:Kuchulem.DotNet.Extensions.Strings.StringExtensions.RemoveDiacritics(System.String)">
+            <summary>
+            Removes all diacritics from a string.
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kuchulem.DotNet.Extensions.Strings.StringExtensions.ToSlug(System.String,Kuchulem.DotNet.Extensions.Strings.StringExtensions.StringToSlugOptions,System.Char)">
+            <summary>
+            Turns the string into a slug. A slug is a normalized version of the string that can be
+            used in urls without encoding it.
+            </summary>
+            <param name="input">The input string</param>
+            <param name="options">Options to be applyed during convertion. see <see cref="T:Kuchulem.DotNet.Extensions.Strings.StringExtensions.StringToSlugOptions"/></param>
+            <param name="spacingChar">The char used as separator, by default the - (dash) character is used.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
