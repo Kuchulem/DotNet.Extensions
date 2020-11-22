@@ -107,9 +107,12 @@ namespace Kuchulem.DotNet.Extensions.Strings
 
             normalized = options.HasFlag(StringToSlugOptions.Capitalize) ? normalized.ToUpperInvariant() : normalized.ToLowerInvariant();
 
+            var allowedChars = new[] { UnicodeCategory.LowercaseLetter, UnicodeCategory.UppercaseLetter, UnicodeCategory.DecimalDigitNumber };
+
             var slug = new StringBuilder().Append(normalized.Select(c =>
             {
-                if (CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.LetterNumber)
+                var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+                if (!allowedChars.Contains(unicodeCategory))
                     return spacingChar;
                 return c;
             }).ToArray()).ToString();
