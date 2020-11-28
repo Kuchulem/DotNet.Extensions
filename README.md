@@ -2,6 +2,11 @@
 
 ![UnitTests](https://github.com/Kuchulem/DotNet.Extensions/workflows/UnitTests/badge.svg)
 
+| Library | Nuget Package |
+| - | - |
+| Kuchulem.DotNet.Extensions.Strings | [![nuget](https://img.shields.io/nuget/v/Kuchulem.DotNet.Extensions.Strings.svg)](https://www.nuget.org/packages/Kuchulem.DotNet.Extensions.Strings/) |
+| Kuchulem.DotNet.Extensions.IEnumerable | [![nuget](https://img.shields.io/nuget/v/Kuchulem.DotNet.Extensions.IEnumerables.svg)](https://www.nuget.org/packages/Kuchulem.DotNet.Extensions.IEnumerables/) |
+
 Various extension methods for DotNet standard
 
 
