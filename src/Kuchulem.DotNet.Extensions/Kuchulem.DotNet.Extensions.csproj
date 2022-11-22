@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
-    <Version>1.0.0-beta.1</Version>
+    <Version>1.0.0-beta.2</Version>
     <Authors>Kuchulem</Authors>
     <Copyright>2022 - Kuchulem</Copyright>
     <PackageIcon>kuchulem-logo-transparent-bg-128.png</PackageIcon>
