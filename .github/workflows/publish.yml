@@ -27,4 +27,4 @@ jobs:
     - name: Pack
       run: dotnet pack --output ./pack/
     - name: Push
-      run: dotnet nuget push ./pack/*.nupkg --api-key oy2kvjqnymmxgds67gdqtzqllrtftmvevgqb2z5oa5n5rq --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push ./pack/*.nupkg --api-key ${{ secrets.NUGET_KEY }} --source https://api.nuget.org/v3/index.json
