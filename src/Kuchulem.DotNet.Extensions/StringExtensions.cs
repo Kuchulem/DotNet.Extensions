@@ -1,4 +1,4 @@
-﻿using Kuchulem.DotNet.Extensions.Strings.Helpers;
+﻿using Kuchulem.DotNet.Extensions.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Kuchulem.DotNet.Extensions.Strings
+namespace Kuchulem.DotNet.Extensions
 {
     /// <summary>
     /// Static class providing extension methods for strings
@@ -85,7 +85,7 @@ namespace Kuchulem.DotNet.Extensions.Strings
         public static string RemoveDiacritics(this string str)
         {
             var normalized = str.Normalize(NormalizationForm.FormD);
-    
+
             var chars = normalized
                 .Where(c => CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark)
                 .ToArray();
@@ -98,7 +98,7 @@ namespace Kuchulem.DotNet.Extensions.Strings
         /// used in urls without encoding it.
         /// </summary>
         /// <param name="input">The input string</param>
-        /// <param name="options">Options to be applyed during convertion. see <see cref="StringExtensions.StringToSlugOptions"/></param>
+        /// <param name="options">Options to be applyed during convertion. see <see cref="StringToSlugOptions"/></param>
         /// <param name="spacingChar">The char used as separator, by default the - (dash) character is used.</param>
         /// <returns></returns>
         public static string ToSlug(this string input, StringToSlugOptions options = StringToSlugOptions.None, char spacingChar = DefaultSlugReplacingChar)
@@ -116,8 +116,8 @@ namespace Kuchulem.DotNet.Extensions.Strings
                     return spacingChar;
                 return c;
             }).ToArray()).ToString();
-            
-            if(options.HasFlag(StringToSlugOptions.ReduceSpacingChars))
+
+            if (options.HasFlag(StringToSlugOptions.ReduceSpacingChars))
                 slug = Regex.Replace(slug, $"{spacingChar}+", $"{spacingChar}");
 
             return slug;

@@ -1,6 +1,5 @@
 ﻿using NUnit.Framework;
 using System.Collections.Generic;
-using Kuchulem.DotNet.Extensions.IEnumerables;
 
 namespace Kuchulem.DotNet.Extensions.Tests.IEnumerables
 {

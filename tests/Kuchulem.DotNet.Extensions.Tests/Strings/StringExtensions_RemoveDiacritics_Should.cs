@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Kuchulem.DotNet.Extensions.Strings;
 
 namespace Kuchulem.DotNet.Extensions.Tests.Strings
 {
