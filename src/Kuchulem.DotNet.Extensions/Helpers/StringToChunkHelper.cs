@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Kuchulem.DotNet.Extensions.Strings.Helpers
+namespace Kuchulem.DotNet.Extensions.Helpers
 {
     internal static class StringToChunkHelper
     {

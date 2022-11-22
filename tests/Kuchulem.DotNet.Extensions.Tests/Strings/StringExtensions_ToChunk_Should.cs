@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using Kuchulem.DotNet.Extensions.Strings;
 using System.Linq;
 
 namespace Kuchulem.DotNet.Extensions.Tests.Strings

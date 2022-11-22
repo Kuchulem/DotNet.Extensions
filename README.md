@@ -1,74 +1,40 @@
 # Kuchulem.DotNet.Extensions
 
-![UnitTests](https://github.com/Kuchulem/DotNet.Extensions/workflows/UnitTests/badge.svg)
+[![NuGet Version](https://img.shields.io/nuget/v/Kuchulem.DotNet.Extensions?label=Nuget%20version&logo=nuget)](https://www.nuget.org/packages/Kuchulem.DotNet.Extensions/)
+[![NuGet Preversion](https://img.shields.io/nuget/vpre/Kuchulem.DotNet.Extensions?label=Nuget%20prerelease&logo=nuget)](https://www.nuget.org/packages/Kuchulem.DotNet.Extensions/)
 
-| Library | Nuget Package |
-| - | - |
-| Kuchulem.DotNet.Extensions.Strings | [![nuget](https://img.shields.io/nuget/v/Kuchulem.DotNet.Extensions.Strings.svg)](https://www.nuget.org/packages/Kuchulem.DotNet.Extensions.Strings/) |
-| Kuchulem.DotNet.Extensions.IEnumerable | [![nuget](https://img.shields.io/nuget/v/Kuchulem.DotNet.Extensions.IEnumerables.svg)](https://www.nuget.org/packages/Kuchulem.DotNet.Extensions.IEnumerables/) |
+
+[![Unit tests](https://github.com/Kuchulem/DotNet.Extensions/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/Kuchulem/DotNet.Extensions/actions/workflows/tests.yml) [![CodeQL](https://github.com/Kuchulem/DotNet.Extensions/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/Kuchulem/DotNet.Extensions/actions/workflows/codeql.yml)
 
 Various extension methods for DotNet standard
-
 
 # How to install
 
 Choose the method you prefere.
 
-## Kuchulem.DotNet.Extensions.IEnumerable
-
-### Package Manager
+## Package Manager
 
 ```sh
-Install-Package Kuschulem.DotNet.Extensions.IEnumerables -Version 1.0.0.1
+Install-Package Kuschulem.DotNet.Extensions -Version 1.0.0-beta.1
 ```
 
-### .Net CLI
+## .Net CLI
 
 ```sh
-dotnet add package Kuschulem.DotNet.Extensions.IEnumerables --version 1.0.0.1
+dotnet add package Kuschulem.DotNet.Extensions --version 1.0.0-beta.1
 ```
 
-### Package reference
+## Package reference
 
 ```xml
-<PackageReference Include="Kuschulem.DotNet.Extensions.IEnumerables" Version="1.0.0.1" />
+<PackageReference Include="Kuschulem.DotNet.Extensions" Version="1.0.0-beta.1" />
 ```
 
-### Paket CLI
+## Paket CLI
 
 ```sh
-paket add Kuschulem.DotNet.Extensions.IEnumerables --version 1.0.0.1
+paket add Kuschulem.DotNet.Extensions --version 1.0.0-beta.1
 ```
-
-## Kuchulem.DotNet.Extensions.String
-
-### Package Manager
-
-```sh
-Install-Package Kuschulem.DotNet.Extensions.Strings -Version 1.0.0.1
-```
-
-### .Net CLI
-
-```sh
-dotnet add package Kuschulem.DotNet.Extensions.Strings --version 1.0.0.1
-```
-
-### Package reference
-
-```xml
-<PackageReference Include="Kuschulem.DotNet.Extensions.Strings" Version="1.0.0.1" />
-```
-
-### Paket CLI
-
-```sh
-paket add Kuschulem.DotNet.Extensions.Strings --version 1.0.0.1
-```
-
-# Documentation
-
-coming soon
 
 # Usage
 
