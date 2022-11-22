@@ -15,25 +15,25 @@ Choose the method you prefere.
 ## Package Manager
 
 ```sh
-Install-Package Kuschulem.DotNet.Extensions -Version 1.0.0-beta.1
+Install-Package Kuschulem.DotNet.Extensions -Version 1.0.0
 ```
 
 ## .Net CLI
 
 ```sh
-dotnet add package Kuschulem.DotNet.Extensions --version 1.0.0-beta.1
+dotnet add package Kuschulem.DotNet.Extensions --version 1.0.0
 ```
 
 ## Package reference
 
 ```xml
-<PackageReference Include="Kuschulem.DotNet.Extensions" Version="1.0.0-beta.1" />
+<PackageReference Include="Kuschulem.DotNet.Extensions" Version="1.0.0" />
 ```
 
 ## Paket CLI
 
 ```sh
-paket add Kuschulem.DotNet.Extensions --version 1.0.0-beta.1
+paket add Kuschulem.DotNet.Extensions --version 1.0.0
 ```
 
 # Usage
