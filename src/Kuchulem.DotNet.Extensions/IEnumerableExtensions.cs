@@ -18,7 +18,7 @@ namespace Kuchulem.DotNet.Extensions
             if (action is null)
                 return;
 
-            source.Select(item =>
+            _ = source.Select(item =>
             {
                 action(item);
                 return item;

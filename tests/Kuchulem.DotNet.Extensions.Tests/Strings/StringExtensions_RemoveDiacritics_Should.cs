@@ -17,7 +17,7 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
                 "ÒÓÔÕÖ" + 
                 "ÙÚÛÜ" + 
                 "Ý" + 
-                "àáâãäå" +
+                "àáâãäåà" +
                 "èéêë" + 
                 "ìíîï" +
                 "ñ" +
@@ -50,7 +50,7 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
                 "OOOOO" +
                 "UUUU" +
                 "Y" +
-                "aaaaaa" +
+                "aaaaaaa" +
                 "eeee" +
                 "iiii" +
                 "n" +
@@ -82,10 +82,10 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
         [Test]
         public void PreserveSpacesAndSpecialChars()
         {
-            var input = "Du chocolas à été mangé  en dehors de la table !\n" +
+            var input = "Du chocolat à été mangé  en dehors de la table !\n" +
                 "Je me demande : Qui est le petit monstre qui à pût faire ça ?";
 
-            var expected = "Du chocolas a ete mange  en dehors de la table !\n" +
+            var expected = "Du chocolat a ete mange  en dehors de la table !\n" +
                 "Je me demande : Qui est le petit monstre qui a put faire ca ?";
 
             Assert.AreEqual(expected, input.RemoveDiacritics());

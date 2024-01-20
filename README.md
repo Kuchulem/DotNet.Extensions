@@ -6,7 +6,7 @@
 
 [![Unit tests](https://github.com/Kuchulem/DotNet.Extensions/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/Kuchulem/DotNet.Extensions/actions/workflows/tests.yml) [![CodeQL](https://github.com/Kuchulem/DotNet.Extensions/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/Kuchulem/DotNet.Extensions/actions/workflows/codeql.yml)
 
-Various extension methods for DotNet standard
+Various extension methods for .net8
 
 # How to install
 
@@ -15,25 +15,25 @@ Choose the method you prefere.
 ## Package Manager
 
 ```sh
-Install-Package Kuschulem.DotNet.Extensions -Version 1.0.0
+Install-Package Kuschulem.DotNet.Extensions -Version 2.0.0
 ```
 
 ## .Net CLI
 
 ```sh
-dotnet add package Kuschulem.DotNet.Extensions --version 1.0.0
+dotnet add package Kuschulem.DotNet.Extensions --version 2.0.0
 ```
 
 ## Package reference
 
 ```xml
-<PackageReference Include="Kuschulem.DotNet.Extensions" Version="1.0.0" />
+<PackageReference Include="Kuschulem.DotNet.Extensions" Version="2.0.0" />
 ```
 
 ## Paket CLI
 
 ```sh
-paket add Kuschulem.DotNet.Extensions --version 1.0.0
+paket add Kuschulem.DotNet.Extensions --version 2.0.0
 ```
 
 # Usage
