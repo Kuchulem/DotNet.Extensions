@@ -19,26 +19,26 @@ namespace Kuchulem.DotNet.Extensions
         public const char DefaultSlugReplacingChar = '-';
 
         /// <summary>
-        /// Options applyed to the <see cref="StringExtensions.ToSlug(string, StringToSlugOptions, string)"/> method.<br/>
+        /// Options applied to the <see cref="StringExtensions.ToSlug(string, StringToSlugOptions, string)"/> method.<br/>
         /// As this is a flag, multiple options can be applied.
         /// </summary>
         [Flags]
         public enum StringToSlugOptions
         {
             /// <summary>
-            /// No options are applyed, default values will be used :
+            /// No options are applied, default values will be used :
             /// <list type="bullet">
             /// <item>
             ///  Spacing chars not reduced : multiple spacing chars are allowed
             /// </item>
             /// <item>
-            ///  Lower case applyed to the whole string
+            ///  Lower case applied to the whole string
             /// </item>
             /// </list>
             /// </summary>
             None,
             /// <summary>
-            /// Reduces the spacing chars, multiple occurences of the separation
+            /// Reduces the spacing chars, multiple occurrences of the separation
             /// character will be replaced by a single one.
             /// </summary>
             ReduceSpacingChars,
@@ -50,16 +50,16 @@ namespace Kuchulem.DotNet.Extensions
         }
 
         /// <summary>
-        /// Splint a string in chumnks of the same size.
+        /// Splint a string in chunks of the same size.
         /// </summary>
         /// <param name="str"><em>this</em> the string to split in chunks</param>
         /// <param name="maxChunkSize">The maximum number of chunks to create</param>
-        /// <param name="wholeWorlds">True to avoid spliting in worlds</param>
+        /// <param name="wholeWorlds">True to avoid splitting in worlds</param>
         /// <returns></returns>
         public static IEnumerable<string> ToChunks(this string str, int maxChunkSize, bool wholeWorlds = false)
         {
             if (string.IsNullOrEmpty(str))
-                return new string[] { };
+                return Array.Empty<string>();
 
             var lines = str.Trim().Split('\n');
 
@@ -95,10 +95,10 @@ namespace Kuchulem.DotNet.Extensions
 
         /// <summary>
         /// Turns the string into a slug. A slug is a normalized version of the string that can be
-        /// used in urls without encoding it.
+        /// used in URLs without encoding it.
         /// </summary>
         /// <param name="input">The input string</param>
-        /// <param name="options">Options to be applyed during convertion. see <see cref="StringToSlugOptions"/></param>
+        /// <param name="options">Options to be applied during conversion. see <see cref="StringToSlugOptions"/></param>
         /// <param name="spacingChar">The char used as separator, by default the - (dash) character is used.</param>
         /// <returns></returns>
         public static string ToSlug(this string input, StringToSlugOptions options = StringToSlugOptions.None, char spacingChar = DefaultSlugReplacingChar)
