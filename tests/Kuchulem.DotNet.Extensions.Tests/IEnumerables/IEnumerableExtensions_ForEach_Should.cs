@@ -13,7 +13,7 @@ namespace Kuchulem.DotNet.Extensions.Tests.IEnumerables
             var expected = new List<int> { 1, 2, 3 };
             list.ForEach(s => ints.Add(int.Parse(s)));
 
-            Assert.AreEqual(expected, ints);
+            Assert.Equals(expected, ints);
         }
 
         [Test]
@@ -24,7 +24,7 @@ namespace Kuchulem.DotNet.Extensions.Tests.IEnumerables
             var expected = false;
             list.ForEach(s => executed = true);
 
-            Assert.AreEqual(expected, executed);
+            Assert.Equals(expected, executed);
         }
     }
 }

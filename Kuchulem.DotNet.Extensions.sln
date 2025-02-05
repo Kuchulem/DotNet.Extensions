@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33103.201
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kuchulem.DotNet.Extensions", "src\Kuchulem.DotNet.Extensions\Kuchulem.DotNet.Extensions.csproj", "{45AFAA8F-BFA1-4B7D-AED7-0EA87448BD29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kuchulem.DotNet.Extensions", "src\Kuchulem.DotNet.Extensions\Kuchulem.DotNet.Extensions.csproj", "{45AFAA8F-BFA1-4B7D-AED7-0EA87448BD29}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kuchulem.DotNet.Extensions.Tests", "tests\Kuchulem.DotNet.Extensions.Tests\Kuchulem.DotNet.Extensions.Tests.csproj", "{C9363BA2-0A41-4D53-A62D-F35FCEEDED46}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kuchulem.DotNet.Extensions.Benchmarks", "benchmarks\Kuchulem.DotNet.Extensions.Benchmarks\Kuchulem.DotNet.Extensions.Benchmarks.csproj", "{2187CF0D-AEB0-4285-AF66-044E0B69FA2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionsDemo", "src\ExtensionsDemo\ExtensionsDemo.csproj", "{171AD6DA-5D58-4D30-9FED-B7A470795BA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +36,12 @@ Global
 		{2187CF0D-AEB0-4285-AF66-044E0B69FA2C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2187CF0D-AEB0-4285-AF66-044E0B69FA2C}.Test|Any CPU.ActiveCfg = Debug|Any CPU
 		{2187CF0D-AEB0-4285-AF66-044E0B69FA2C}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{171AD6DA-5D58-4D30-9FED-B7A470795BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{171AD6DA-5D58-4D30-9FED-B7A470795BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{171AD6DA-5D58-4D30-9FED-B7A470795BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{171AD6DA-5D58-4D30-9FED-B7A470795BA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{171AD6DA-5D58-4D30-9FED-B7A470795BA1}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{171AD6DA-5D58-4D30-9FED-B7A470795BA1}.Test|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
