@@ -76,7 +76,7 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
                 "YyY" +
                 "ZzZzZz";
 
-            Assert.Equals(expected, input.RemoveDiacritics());
+            Assert.That(expected == input.RemoveDiacritics());
         }
 
         [Test]
@@ -88,7 +88,7 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
             var expected = "Du chocolat a ete mange  en dehors de la table !\n" +
                 "Je me demande : Qui est le petit monstre qui a put faire ca ?";
 
-            Assert.Equals(expected, input.RemoveDiacritics());
+            Assert.That(expected == input.RemoveDiacritics());
         }
     }
 }

@@ -18,10 +18,10 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
 
             var chunks = str.ToChunks(20);
 
-            Assert.Equals(6, chunks.Count());
+            Assert.That(6 == chunks.Count());
 
             foreach (var chunk in chunks)
-                Assert.Equals(20, chunk.Length);
+                Assert.That(20 == chunk.Length);
         }
 
         [Test]
@@ -51,10 +51,10 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
                 "uis."
             };
 
-            Assert.Equals(expected.Length, chunks.Count());
+            Assert.That(expected.Length == chunks.Count());
 
             for (var i = 0; i < chunks.Count(); i++)
-                Assert.Equals(expected[i], chunks.ElementAt(i));
+                Assert.That(expected[i] == chunks.ElementAt(i));
         }
 
         [Test]
@@ -65,12 +65,12 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
 
             var chunks = str.ToChunks(20);
 
-            Assert.Equals(6, chunks.Count());
+            Assert.That(6 == chunks.Count());
 
             for (var i = 0; i < 5; i++)
-                Assert.Equals(20, chunks.ElementAt(i).Length);
+                Assert.That(20 == chunks.ElementAt(i).Length);
 
-            Assert.Equals(18, chunks.ElementAt(5).Length);
+            Assert.That(18 == chunks.ElementAt(5).Length);
         }
 
         [Test]
@@ -81,8 +81,8 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
             var chunks = str.ToChunks(20);
             var wordsChunks = str.ToChunks(20, true);
 
-            Assert.Equals(chunks, string.Empty);
-            Assert.Equals(wordsChunks, string.Empty);
+            Assert.That(chunks.Count() == 0);
+            Assert.That(wordsChunks.Count() == 0);
         }
 
         [Test]
@@ -93,8 +93,8 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
             var chunks = str.ToChunks(20);
             var wordsChunks = str.ToChunks(20, true);
 
-            Assert.Equals(chunks, string.Empty);
-            Assert.Equals(wordsChunks, string.Empty);
+            Assert.That(chunks.Count() == 0);
+            Assert.That(wordsChunks.Count() == 0);
         }
 
         [Test]
@@ -124,10 +124,7 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
                 "duis."
             };
 
-            Assert.Equals(expected.Length, chunks.Count());
-
-            for (var i = 0; i < chunks.Count(); i++)
-                Assert.Equals(expected[i], chunks.ElementAt(i));
+            Assert.That(AssertionsHelpers.ArraysAreEqual(expected, chunks));
         }
 
         [Test]
@@ -157,10 +154,7 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
                 "at turpis duis."
             };
 
-            Assert.Equals(expected.Length, chunks.Count());
-
-            for (var i = 0; i < chunks.Count(); i++)
-                Assert.Equals(expected[i], chunks.ElementAt(i));
+            Assert.That(AssertionsHelpers.ArraysAreEqual(expected, chunks));
         }
     }
 }

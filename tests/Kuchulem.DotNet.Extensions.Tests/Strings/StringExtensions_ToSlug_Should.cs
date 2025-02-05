@@ -10,7 +10,7 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
             var input = "Rédaction d'une chaîne de charactères accentuée";
             var expected = "redaction-d-une-chaine-de-characteres-accentuee";
 
-            Assert.Equals(expected, input.ToSlug());
+            Assert.That(expected == input.ToSlug());
         }
 
         [Test]
@@ -19,7 +19,7 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
             var input = "Rédaction d'une chaîne de charactères accentuée !";
             var expected = "redaction-d-une-chaine-de-characteres-accentuee--";
 
-            Assert.Equals(expected, input.ToSlug());
+            Assert.That(expected == input.ToSlug());
         }
 
         [Test]
@@ -28,7 +28,7 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
             var input = "Rédaction d'une chaîne de charactères accentuée !";
             var expected = "redaction-d-une-chaine-de-characteres-accentuee-";
 
-            Assert.Equals(expected, input.ToSlug(StringExtensions.StringToSlugOptions.ReduceSpacingChars));
+            Assert.That(expected == input.ToSlug(StringExtensions.StringToSlugOptions.ReduceSpacingChars));
         }
 
         [Test]
@@ -37,7 +37,7 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
             var input = "Rédaction d'une chaîne de charactères accentuée !";
             var expected = "redaction_d_une_chaine_de_characteres_accentuee_";
 
-            Assert.Equals(expected, input.ToSlug(StringExtensions.StringToSlugOptions.ReduceSpacingChars, '_'));
+            Assert.That(expected == input.ToSlug(StringExtensions.StringToSlugOptions.ReduceSpacingChars, '_'));
         }
 
         [Test]
@@ -46,7 +46,7 @@ namespace Kuchulem.DotNet.Extensions.Tests.Strings
             var input = "Rédaction d'une chaîne de charactères accentuée !";
             var expected = "REDACTION_D_UNE_CHAINE_DE_CHARACTERES_ACCENTUEE_";
 
-            Assert.Equals(expected, input.ToSlug(StringExtensions.StringToSlugOptions.ReduceSpacingChars | StringExtensions.StringToSlugOptions.Capitalize, '_'));
+            Assert.That(expected == input.ToSlug(StringExtensions.StringToSlugOptions.ReduceSpacingChars | StringExtensions.StringToSlugOptions.Capitalize, '_'));
         }
     }
 }

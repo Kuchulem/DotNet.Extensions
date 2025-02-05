@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kuchulem.DotNet.Extensions"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kuchulem.DotNet.Extensions.Tests", "tests\Kuchulem.DotNet.Extensions.Tests\Kuchulem.DotNet.Extensions.Tests.csproj", "{C9363BA2-0A41-4D53-A62D-F35FCEEDED46}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kuchulem.DotNet.Extensions.Benchmarks", "benchmarks\Kuchulem.DotNet.Extensions.Benchmarks\Kuchulem.DotNet.Extensions.Benchmarks.csproj", "{2187CF0D-AEB0-4285-AF66-044E0B69FA2C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionsDemo", "src\ExtensionsDemo\ExtensionsDemo.csproj", "{171AD6DA-5D58-4D30-9FED-B7A470795BA1}"
 EndProject
 Global
@@ -30,12 +28,6 @@ Global
 		{C9363BA2-0A41-4D53-A62D-F35FCEEDED46}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C9363BA2-0A41-4D53-A62D-F35FCEEDED46}.Test|Any CPU.ActiveCfg = Test|Any CPU
 		{C9363BA2-0A41-4D53-A62D-F35FCEEDED46}.Test|Any CPU.Build.0 = Test|Any CPU
-		{2187CF0D-AEB0-4285-AF66-044E0B69FA2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2187CF0D-AEB0-4285-AF66-044E0B69FA2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2187CF0D-AEB0-4285-AF66-044E0B69FA2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2187CF0D-AEB0-4285-AF66-044E0B69FA2C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2187CF0D-AEB0-4285-AF66-044E0B69FA2C}.Test|Any CPU.ActiveCfg = Debug|Any CPU
-		{2187CF0D-AEB0-4285-AF66-044E0B69FA2C}.Test|Any CPU.Build.0 = Debug|Any CPU
 		{171AD6DA-5D58-4D30-9FED-B7A470795BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{171AD6DA-5D58-4D30-9FED-B7A470795BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{171AD6DA-5D58-4D30-9FED-B7A470795BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
