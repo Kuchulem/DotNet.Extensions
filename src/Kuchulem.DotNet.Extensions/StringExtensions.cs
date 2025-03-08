@@ -1,6 +1,7 @@
 ﻿using Kuchulem.DotNet.Extensions.Helpers;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -121,6 +122,11 @@ namespace Kuchulem.DotNet.Extensions
                 slug = Regex.Replace(slug, $"{spacingChar}+", $"{spacingChar}");
 
             return slug;
+        }
+
+        public static double Calculate(this string input, params int[] replaces)
+        {
+            return Convert.ToDouble(new DataTable().Compute(string.Format(input, [.. replaces]), null));
         }
     }
 }
